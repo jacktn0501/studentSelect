@@ -5,7 +5,15 @@ chrome.runtime.onInstalled.addListener(function() {
 	xmlhttp.onreadystatechange = function(){
 		if (xmlhttp.status == 200 && xmlhttp.readyState == 4){
 				txt = xmlhttp.responseText;
-				console.log(txt)
+				let stripped = txt.split('\n')
+				let studentNames = stripped.filter(slimDown);
+				function slimDown(value){
+					return value != "" && value != undefined
+				}
+				
+				console.log(studentNames);
+				console.log(studentNames[2] === "");
+				console.log(studentNames[2])
 			}
 	};
 	xmlhttp.open("GET", "period1.txt", true);

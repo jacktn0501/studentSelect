@@ -1,3 +1,5 @@
+'use strict';
+
 chrome.runtime.onInstalled.addListener(function() {
 	console.log(' background.js loaded');
 });
@@ -40,3 +42,4 @@ chrome.extension.onConnect.addListener(function(port) {
 		
 	});
 });
+

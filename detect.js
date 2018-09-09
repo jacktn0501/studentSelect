@@ -1,9 +1,19 @@
+'use strict';
+
 // Detects which period is selected.
+
+var attached = false;
+var students = [];
 
 window.onload = function() {
 	document.getElementById("btn").addEventListener("click", selectedPeriod)
+	document.getElementById("RANDOMIZE").addEventListener("click", randomPick);
+	document.getElementById("edit").addEventListener("click", editNames);
 }
 
+function editNames(){
+	// to do: add ability to edit name list
+};
 
 let selectedPeriod = () => {
 	
@@ -20,12 +30,21 @@ let selectedPeriod = () => {
 		
 		console.log(msg);
 		
-		let students = msg;
+		students = msg;
 		
 		//create the display
-		document.getElementById('display').textContent = students;
 		
+		document.getElementById('display').textContent = "Students: " + students;
 		
 	});
 
+}
+
+function randomPick(){
+	
+	if (students != []) {
+		let selected = students[Math.floor(Math.random() * students.length)];
+		console.log(selected);
+		
+	}
 }

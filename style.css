@@ -1,0 +1,12 @@
+/*This is mostly a placeholder style sheet for now*/
+
+body {
+	text-align:center;
+	font-family:arial;
+	background-color:#cc99ff;
+	color:#99ff99;
+}
+
+h3 {
+	font-size:20px;
+}

@@ -1,8 +1,11 @@
 {
-	"name": "Student Randomimzer",
+	"name": "Student Randomizer",
 	"version": "1.0",
 	"description": "Randomly Selects Students",
 	"manifest_version": 2,
+	"icons": {
+		"27": "images/logo.png"
+	},
 	"background": {
 		"persistent": true,
 		"scripts":["background.js"]
@@ -10,5 +13,10 @@
 	"browser_action": {
 		"default_popup": "popup.html",
 		"default_title": "Select a student!"
-	}
+	},
+	"permissions": [
+		"storage",
+		"tabs",
+		"<all_urls>"
+	]
 }

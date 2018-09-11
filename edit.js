@@ -15,28 +15,21 @@ let save =() => {
 	}
 	
 	let textdata = document.getElementById('display').value;
-	console.log(textdata);
+	
+	let stripped = textdata.split('\n');
+	
+	let studentNames = stripped.filter(slimDown);
+	
+	function slimDown(value){
+					return value != "" && value != undefined
+	}
+	
+	console.log(studentNames);
 		
-	// to-do make post request to .txt files.
-	// Still trying to figure this one out...
-		
-		
-	/*
-	let postRequest = new XMLHttpRequest();
-		
-	postRequest.onreadystatechange = function(){
-		if (postRequest.readyState == 4 && postRequest.status == 200){
-			console.log('success!')
-		} else {
-			console.log('error has happened')
-		}
-	};
-		
-		
-	postRequest.open("PUT", periodChange + ".txt", true);
-	postRequest.setRequestHeader("X-Custom-Header", "value");
-	postRequest.send(textdata);
-	*/
+	let port = chrome.extension.connect({
+		name: "Save Student Names";
+	});
+	port.postMessage(studentNames);
 	
 }
 

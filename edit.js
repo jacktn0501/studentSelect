@@ -24,10 +24,12 @@ let save =() => {
 					return value != "" && value != undefined
 	}
 	
-	console.log(studentNames);
-		
+	//console.log(studentNames.unshift(periodChange));
+	
+	studentNames.unshift(periodChange);
+	
 	let port = chrome.extension.connect({
-		name: "Save Student Names";
+		name: "Save Student Names"
 	});
 	port.postMessage(studentNames);
 	

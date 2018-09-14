@@ -44,7 +44,7 @@ function randomPick(){
 	
 	if (students != []) {
 		let selected = students[Math.floor(Math.random() * students.length)];
-		console.log(selected);
+		document.getElementById("chosen").textContent = "Student Selected: " + selected;
 		
 	}
 }

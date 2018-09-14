@@ -4,7 +4,9 @@
 	"description": "Randomly Selects Students",
 	"manifest_version": 2,
 	"icons": {
-		"27": "images/logo.png"
+		"16": "images/logo.png",
+		"48": "images/logo48.png",
+		"96": "images/logo96.png"
 	},
 	"background": {
 		"persistent": true,

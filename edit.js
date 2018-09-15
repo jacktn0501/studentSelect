@@ -5,7 +5,7 @@ var periodChange = 0;
 
 window.onload = function() {
 	document.getElementById("save").addEventListener("click", save);
-	document.getElementById("periodSelect").addEventListener("click", selectedPeriod);
+	document.getElementById("btn").addEventListener("click", selectedPeriod);
 }
 
 let save =() => {
@@ -53,12 +53,15 @@ let selectedPeriod = () => {
 		console.log(msg);
 		
 		let students = msg;
+		//console.log(msg);
 		
+		
+		document.getElementById('display').value += students.join('\n');;
 		//add text to text-area
 		
-		for(let i=0;i<students.length;i++){
-			document.getElementById('display').value += students[i];
-		}
+		//for(let i=0;i<students.length;i++){
+		//	document.getElementById('display').value += students[i];
+		//}
 		
 	});
 }

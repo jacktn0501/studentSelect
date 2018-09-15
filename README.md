@@ -10,7 +10,7 @@ A Computer Science Project/Chrome Extension to better randomly select students i
 
 ## Why?
 
-We Team JAM, being made up of high school students know firsthand how hard it can be to get students to participate during class.  Also conventional methods of randomly selecting students (popsicle sticks in can) can be so tiresome.  Student Selector fixes all of those problems by stream lining randomized student selection into a chrome extension for your easy consumption!
+We Team JAM, being made up of high school students, know firsthand how hard it can be to get students to participate during class.  Also conventional methods of randomly selecting students (popsicle sticks in can) can be so tiresome.  Student Selector fixes all of those problems by stream lining randomized student selection into a chrome extension for your easy consumption!
 
 ## How?
 
@@ -20,7 +20,7 @@ By using revolution technology such as the chrome.storage API we have a intuitiv
 
 ## Acknowledgements
 
-We, Team Jam, are not gurus and as such we didn't know every detail of how to make this extension and had to look beyond ourselves to find the information we were lacking.  Here are the sources to the great sources of information that was used in the creation of this extension.
+We, Team JAM, are not gurus and as such we didn't know every detail of how to make this extension and had to look beyond ourselves to find the information we were lacking.  Here are the sources to the great sources of information that was used in the creation of this extension.
 
 https://stackoverflow.com/questions/13546778/how-to-communicate-between-popup-js-and-background-js-in-chrome-extension
 https://stackoverflow.com/questions/1033398/how-to-execute-a-function-when-page-has-fully-loaded

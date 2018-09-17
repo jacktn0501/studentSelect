@@ -3,8 +3,8 @@
 body {
 	text-align:center;
 	font-family:arial;
-	background-color:#00a2e8;
-	color:#99ff99;
+	background-color:#ffffff;
+	color:#262626;
 	width:300px;
 
 }
@@ -12,7 +12,7 @@ body {
 
 #chosen {
 	font-size: 22px;
-	background-color:#ff6600;	
+	background-color:#ffffff;	
 	/*color:#FFFFFF;
 	border-radius:12px;*/
 }

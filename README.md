@@ -1,2 +1,2 @@
 # Student Selector
-Computer Science Project by Milan Donhowe, Jack Nelson and Anne Marie.
+Computer Science Project by Milan Donhowe, Jack Nelson and Anne Marie Powell.
